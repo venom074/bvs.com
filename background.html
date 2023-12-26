@@ -1,0 +1,69 @@
+<HTML>
+
+    <HEAD>
+    
+    <TITLE>Background image
+    
+    </TITLE>
+    <style>
+        pre,p{
+            text-align: center;
+        }
+    </style>
+    
+    </HEAD>
+    
+    <BODY BACKGROUND="https://3.bp.blogspot.com/-D-HlEv6tPbE/WAs0R1lFO9I/AAAAAAAAJv8/tESPgLNm2-YYWmQQTUrhaV7GG1sh4BWLQCLcB/s1600/Jungle%2BRoad%2BBackgrounds%2B1.jpg">
+    
+    <P>
+    
+    I am using scene as background.
+    
+    </P><hr>
+    <p>SOURCE CODE:</P><HR>
+        <div id="copyText" contenteditable="true">
+              <pre>   
+        <code>
+            &lt;HTML&gt;
+
+            &lt;HEAD&gt;
+            
+            &lt;TITLE&gt;Background image
+            
+            &lt;/TITLE&gt;
+            
+            &lt;/HEAD&gt;
+            
+            &lt;BODY BACKGROUND=&quot;Scene.jpg&quot;&gt;
+            
+            &lt;P&gt;
+            
+            I am using scene as background.
+            
+            &lt;/P&gt;
+            
+            &lt;/BODY&gt;
+            
+            &lt;/HTML&gt;
+        </code>
+        </pre>
+         </div><HR>
+        
+            <button onclick="copyText()">Copy code</button>
+        
+            <script>
+                function copyText() {
+                    var copyText = document.getElementById("copyText");
+                    var range = document.createRange();
+                    range.selectNode(copyText);
+                    window.getSelection().removeAllRanges(); // Clear previous selections
+                    window.getSelection().addRange(range);
+                    document.execCommand("copy");
+                    window.getSelection().removeAllRanges(); // Clear after copying
+                    alert("Text copied!");
+                }
+            </script>
+    
+    </BODY>
+    
+    </HTML>

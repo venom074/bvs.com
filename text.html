@@ -1,0 +1,70 @@
+<HTML>
+
+    <HEAD>
+    
+    <TITLE>Text Color
+    
+    </TITLE>
+    
+    </HEAD>
+    
+    <BODY BGCOLOR="RED" TEXT="YELLOW">
+    
+    <P>
+    
+    I am using red color as background with yellow text.
+    
+    </p>
+    <br>
+    <hr>
+    <P>SOOURCE CODE:</P>
+    <HR>
+    <div id="copyText" contenteditable="true">
+       <pre>
+        <code>
+&lt;HTML&gt;
+
+&lt;HEAD&gt;
+
+&lt;TITLE&gt;Text Color
+
+&lt;/TITLE&gt;
+
+&lt;/HEAD&gt;
+
+&lt;BODY BGCOLOR=&quot;RED&quot; TEXT=&quot;YELLOW&quot;&gt;
+
+&lt;P&gt;
+
+I am using red color as background with yellow text.
+
+&lt;/p&gt;
+
+&lt;/BODY&gt;
+
+&lt;/HTML&gt;
+        </code>
+       </pre>
+        <p></p>
+    </div><HR>
+
+    <button onclick="copyText()">Copy code</button>
+
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("copyText");
+            var range = document.createRange();
+            range.selectNode(copyText);
+            window.getSelection().removeAllRanges(); // Clear previous selections
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges(); // Clear after copying
+            alert("Text copied!");
+        }
+    </script>
+
+
+    
+    </BODY>
+    
+    </HTML>

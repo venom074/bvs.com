@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgcolor</title>
+   
+</head>
+<body bgcolor="red">
+    <p>
+        i`m using red color as background
+    </p>
+    <br>
+    <hr>
+    <div id="copyText" contenteditable="true">
+        <!-- Your content here -->
+        <pre>
+            <code>
+ &lt;html&gt;
+&lt;head&gt;
+    
+    &lt;title&gt;bgcolor&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;red&quot;&gt;
+    &lt;p&gt;
+        i`m using red color as background
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+        <p></p>
+    </div>
+
+    <button onclick="copyText()">Copy Text</button>
+
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("copyText");
+            var range = document.createRange();
+            range.selectNode(copyText);
+            window.getSelection().removeAllRanges(); // Clear previous selections
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges(); // Clear after copying
+            alert("Text copied!");
+        }
+    </script>
+
+
+</body>
+</html>

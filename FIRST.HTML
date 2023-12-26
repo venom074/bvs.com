@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dd{
+            box-shadow: inset;
+            border-radius: 4px;
+            border-color: brown;
+            border: 4px;
+        }
+        #ddv{
+            border: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    HELLO WORLD
+    <BR>
+        <hr>
+        <BR>
+            <PRE>
+                SOURCE CODE: 
+            </PRE>
+            <div id="ddv">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy-Paste Example</title>
+</head>
+<body>
+
+    <div id="copyText" contenteditable="true">
+      
+      <pre class="dd">
+        <code>
+           
+&lt;html&gt;
+&lt;head&gt;
+   
+    &lt;title&gt;first program&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    HELLO WORLD
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+      </pre>
+    </div>
+</div>
+    <button onclick="copyText()">Copy Text</button>
+
+    <script>
+        function copyText() {
+            var copyText = document.getElementById("copyText");
+            var range = document.createRange();
+            range.selectNode(copyText);
+            window.getSelection().removeAllRanges(); 
+            window.getSelection().addRange(range);
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges(); 
+            alert("Text copied!");
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>

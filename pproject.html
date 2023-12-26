@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2980b9;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ecf0f1;
+        }
+
+        nav a.selected::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #ecf0f1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            margin: 20px;
+        }
+
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+
+        .project-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .project-details {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .table-of-contents {
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+        }
+
+        .table-of-contents h3 {
+            color: #3498db;
+        }
+
+        .table-of-contents ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .table-of-contents li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Project Webpages Collection</title>
+</head>
+<body>
+
+    <header>
+        <h1>WEB TECHNOLOGY </h1>
+        <P>All the codes below is taken from note of D.S.C provided by S.K.Y</P>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('webpage1')" class="selected">HTML</a>
+        <a href="#" onclick="showSection('webpage2')">CSS</a>
+        <a href="#" onclick="showSection('webpage3')">C</a>
+        <!-- Add more links for additional webpages -->
+    </nav>
+
+    <section id="webpage1" class="active">
+        <!-- Webpage 1 Project Cards -->
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img class="project-image" src="desktop-1920x1080 wallpare.jpg" alt="Webpage 1 Project 1">
+            <div class="project-details">
+                <h2> Project 1</h2>
+                <p>first program in html</p>
+                <a href="FIRST.HTML">VIEW</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img class="project-image" src="https://png.pngtree.com/thumb_back/fh260/background/20210825/pngtree-creative-chinese-style-2020-year-of-the-rat-festival-outdoor-poster-image_745385.jpg" width="-60%" alt="Webpage 1 Project 2">
+            <div class="project-details">
+                <h2> Project 2</h2>
+                <p>background-color</p>
+                <a href="bgcolor.html">VIEW</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTo24z9lfyyKhO2hcYUyLsvugCvVAiu1kNb-mYM02AAhHp_pjJRq1o_4mLSzSISNSd3c&usqp=CAU" alt="Webpage 1 Project 3">
+            <div class="project-details">
+                <h2> Project 3</h2>
+                <p>text</p>
+                <a href="text.html">VIEW</a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <!-- Add more project cards for Webpage 1 projects as needed -->
+        <div class="project-card">
+            <img class="project-image" src="https://3.bp.blogspot.com/-D-HlEv6tPbE/WAs0R1lFO9I/AAAAAAAAJv8/tESPgLNm2-YYWmQQTUrhaV7GG1sh4BWLQCLcB/s1600/Jungle%2BRoad%2BBackgrounds%2B1.jpg" alt="Webpage 1 Project 3">
+            <div class="project-details">
+                <h2> Project 4</h2>
+                <p>background image</p>
+                <a href="background.html">VIEW</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="webpage2">
+        <!-- Webpage 2 Project Cards -->
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img class="project-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTo24z9lfyyKhO2hcYUyLsvugCvVAiu1kNb-mYM02AAhHp_pjJRq1o_4mLSzSISNSd3c&usqp=CAU" alt="Webpage 2 Project 1">
+            <div class="project-details">
+                <h2>CSS TUTS</h2>
+                <p>Description of Webpage 2 Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#webpage2project1">Read More</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <!-- Add more project cards for Webpage 2 projects as needed -->
+    </section>
+
+    <section id="webpage3">
+        <!-- Webpage 3 Project Cards -->
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img class="project-image" src="webpage3_project1.jpg" alt="Webpage 3 Project 1">
+            <div class="project-details">
+                <h2>Webpage 3 Project 1</h2>
+                <p>Description of Webpage 3 Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#webpage3project1">Read More</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img class="project-image" src="webpage3_project1.jpg" alt="Webpage 3 Project 1">
+            <div class="project-details">
+                <h2>Webpage 3 Project 1</h2>
+                <p>Description of Webpage 3 Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#webpage3project1">Read More</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img class="project-image" src="webpage3_project1.jpg" alt="Webpage 3 Project 1">
+            <div class="project-details">
+                <h2>Webpage 3 Project 1</h2>
+                <p>Description of Webpage 3 Project 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#webpage3project1">Read More</a>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <!-- Add more project cards for Webpage 3 projects as needed -->
+    </section>
+
+    <!-- Include your existing table of contents here -->
+
+    <footer>
+        <!-- Your existing footer content remains unchanged -->
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            var navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.classList.remove('selected');
+            });
+
+            document.getElementById(sectionId).classList.add('active');
+
+            navLinks.forEach(function(link) {
+                if (link.getAttribute('onclick') === 'showSection(\'' + sectionId + '\')') {
+                    link.classList.add('selected');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
